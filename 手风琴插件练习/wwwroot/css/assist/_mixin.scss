@@ -1,0 +1,109 @@
+/* opacity */
+@mixin opacity($opacity){
+    opacity: $opacity / 100;
+    filter:alpha(opacity=$opacity);
+}
+
+/* inline-block */
+@mixin inline-block(){
+    display: inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+/* transition */
+@mixin transition($transition...){
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+/* transform */
+@mixin transform($transforms){
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transform-origin($x, $y){
+    -webkit-transform-origin: $x $y;
+    transform-origin: $x $y;
+}
+
+@mixin transform-style($style){
+    -webkit-transform-style: $style;
+    transform-style: $style;
+}
+
+/* translate */
+@mixin translate($x, $y){
+    @include transform(translate($x, $y));
+}
+
+@mixin translateX($x){
+    @include transform(translateX($x));
+}
+
+@mixin translateY($y){
+    @include transform(translateY($y));
+}
+
+@mixin translateZ($z){
+    @include transform(translateY($z));
+}
+
+@mixin translate3d($x, $y, $z){
+    @include transform(translate3d($x, $y, $z));
+}
+
+/* placeholder */
+@mixin placeholder($fontSize, $color) {
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        font-family: 'microsoft yahei';
+        color: $color;
+        font-size: $fontSize + px;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        font-family: 'microsoft yahei';
+        color: $color;
+        font-size: $fontSize + px;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+
+    .placeholder {
+        font-family: 'microsoft yahei';
+        color: $color !important;
+        font-size: $fontSize + px;
+    }
+}
+
+//ellipsis
+@mixin ellipsis(){
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+//stars
+@mixin star($n:0){
+    @for $i from 0 through $n{
+        .star-#{$i}{
+            width: 63 + $i * 17 + px;
+        }
+    }
+}
+

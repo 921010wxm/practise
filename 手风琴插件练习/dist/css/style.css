@@ -1,0 +1,321 @@
+/**
+ * style.css
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-08 16:52:27
+ * @version $Id$
+ */
+/* bass css */
+body {
+  margin: 0 auto;
+  font: 14px/1.5 "microsoft yahei", Arial, sans-serif;
+  color: #000;
+  background: #fff; }
+
+.minwidth {
+  width: 1024px; }
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.box {
+  position: relative; }
+
+.no-border {
+  border-bottom: none !important; }
+
+/* CSS Reset */
+body, div, span, object, iframe, input, h1, h2, h3, h4, h5, h6, p, pre, a, acronym, address, code, del, em, font, img, ins, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+input, select {
+  vertical-align: middle; }
+
+input, textarea, select {
+  font: 12px/1.5 "microsoft yahei", Arial, sans-serif; }
+
+fieldset, img {
+  border: 0; }
+
+address, code, th, em {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+/* opacity */
+/* inline-block */
+/* transition */
+/* transform */
+/* translate */
+/* placeholder */
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-27 14:22:28
+ * @version $Id$
+ */
+@keyframes triFlyupl {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, -20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, -20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes triFlyupl {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, -20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, -20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes triFlydownl {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, 20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, 20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes triFlydownl {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, 20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(-20%, 20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes triFlyupr {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, -20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, -20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes triFlyupr {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, -20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, -20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes triFlydownr {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, 20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, 20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes triFlydownr {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, 20%, 0);
+    transform: scale(4, 4) rotateX(200deg) skew(20deg) translate3d(20%, 20%, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes moveAround {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  25% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 14px, 0);
+    transform: translate3d(0, 14px, 0); }
+
+  50% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(14px, 14px, 0);
+    transform: translate3d(14px, 14px, 0); }
+
+  75% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(14px, -14px, 0);
+    transform: translate3d(14px, -14px, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes moveAround {
+  0% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  25% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 14px, 0);
+    transform: translate3d(0, 14px, 0); }
+
+  50% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(14px, 14px, 0);
+    transform: translate3d(14px, 14px, 0); }
+
+  75% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(14px, -14px, 0);
+    transform: translate3d(14px, -14px, 0); }
+
+  100% {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.trifly1 {
+  animation: triFlyupl linear 0.8s forwards 1s, moveAround linear 3.5s alternate infinite 1.8s;
+  -webkit-animation: triFlyupl linear 0.8s forwards 1s, moveAround linear 3.5s alternate infinite 1.8s; }
+
+.trifly2 {
+  animation: triFlydownl linear 0.8s forwards 0.8s, moveAround linear 3.5s alternate infinite 1.6s;
+  -webkit-animation: triFlydownl linear 0.8s forwards 0.8s, moveAround linear 3.5s alternate infinite 1.6s; }
+
+.trifly3 {
+  animation: triFlyupr linear 1s forwards 0.5s, moveAround linear 3.5s alternate infinite 1.5s;
+  -webkit-animation: triFlyupr linear 1s forwards 0.5s, moveAround linear 3.5s alternate infinite 1.5s; }
+
+.trifly4 {
+  animation: triFlydownl linear 1s forwards 0.2s, moveAround linear 3.5s alternate infinite 1.2s;
+  -webkit-animation: triFlydownl linear 1s forwards 0.2s, moveAround linear 3.5s alternate infinite 1.2s; }
+
+.trifly5 {
+  animation: triFlydownr linear 1s forwards, moveAround linear 3.5s alternate infinite 1s;
+  -webkit-animation: triFlydownr linear 1s forwards, moveAround linear 3.5s alternate infinite 1s; }
+
+.trifly6 {
+  animation: triFlydownr linear 1s forwards 0.7s, moveAround linear 3.5s alternate infinite 1.7s;
+  -webkit-animation: triFlydownr linear 1s forwards 0.7s, moveAround linear 3.5s alternate infinite 1.7s; }
+
+.trifly7 {
+  animation: triFlyupl linear 1s forwards 0.8s, moveAround linear 3s alternate infinite 1.8s;
+  -webkit-animation: triFlyupl linear 1s forwards 0.8s, moveAround linear 3s alternate infinite 1.8s; }
+
+.trifly8 {
+  animation: triFlyupr linear 1s forwards, moveAround linear 3s alternate infinite 1s;
+  -webkit-animation: triFlyupr linear 1s forwards, moveAround linear 3s alternate infinite 1s; }
+
+.trifly9 {
+  animation: triFlydownl linear 1s forwards 0.2s, moveAround linear 3s alternate infinite 1.2s;
+  -webkit-animation: triFlydownl linear 1s forwards 0.2s, moveAround linear 3s alternate infinite 1.2s; }
+
+.trifly10 {
+  animation: triFlydownr linear 1s forwards, moveAround linear 3s alternate infinite 1s;
+  -webkit-animation: triFlydownr linear 1s forwards, moveAround linear 3s alternate infinite 1s; }
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-08 16:55:00
+ * @version $Id$
+ */
+.slide-wrap {
+  position: relative;
+  overflow: hidden; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden; }
+
+/**
+ * index.css
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-08 16:59:02
+ * @version $Id$
+ */
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.slide-wrap {
+  width: 1200px;
+  height: 450px; }
+
+.slide-wrap .slide {
+  width: 800px; }
+  .slide-wrap .slide a {
+    cursor: url('../img/pointer.png'), pointer; }
+
+/*首页*/

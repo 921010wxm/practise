@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * style.css
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-08 16:52:27
+ * @version $Id$
+ */
+@import "base/base";
+@import "base/reset";
+@import "assist/mixin";
+@import "layout/animate"; 
+@import "assist/accordionSlide"; 
+@import "layout/index";  /*首页*/
+

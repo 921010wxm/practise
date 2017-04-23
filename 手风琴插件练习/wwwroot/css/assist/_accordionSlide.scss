@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-02-08 16:55:00
+ * @version $Id$
+ */
+
+
+.slide-wrap{
+	position: relative;
+	overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    // transition:all ease-in-out ;
+}
